@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:layout_margin="10dp"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_below="@+id/cardTitle"
+            android:id="@+id/cardImage"
+            android:layout_height="100dp"
+            android:layout_width="100dp">
+        </ImageView>
+
+        <TextView
+            android:id="@+id/cardTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="hello"/>
+
+        <Button
+            android:id="@+id/button"
+            android:visibility="gone"
+            android:layout_below="@+id/cardImage"
+            android:text="Play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/cardCategory"
+            android:visibility="gone"
+            android:layout_below="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="scategories"/>
+
+        <ImageView
+            android:layout_toRightOf="@+id/cardImage"
+            android:visibility="gone"
+            android:layout_below="@+id/cardTitle"
+            android:id="@+id/cardSecondaryImage"
+            android:layout_height="100dp"
+            android:layout_width="100dp">
+        </ImageView>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
